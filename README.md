@@ -2,8 +2,7 @@
 
 This light-weight library provides images with letter/text like the Gmail or Android contact apps
 
-![](tdw_unselected.png)
-![](tdw_selected.png)
+<img src="https://raw.githubusercontent.com/pranayairan/TextDrawableWidget/master/images/tdw_unselected.png" height="580" width="320" >    <img src="https://raw.githubusercontent.com/pranayairan/TextDrawableWidget/master/images/tdw_selected.png" height="580" width="320" >
 
 ## Pub Package Can Be Found At
 
@@ -15,7 +14,7 @@ This light-weight library provides images with letter/text like the Gmail or And
 Text Drawable Widget support 2 types of mode, 1 is the default mode and other is more customizable advance mode.
 
 ### Default Mode
-![](tdw_circle.png)
+<img src="https://raw.githubusercontent.com/pranayairan/TextDrawableWidget/master/images/tdw_circle.png">
 
 To use default mode, import the text drawable widget file in your project and add following line
 
@@ -29,7 +28,7 @@ This will add the text drawable widget, with default size, colors and fonts. Def
 
 
 ### Customizable Mode
-![](tdw_square.png)
+<img src="https://raw.githubusercontent.com/pranayairan/TextDrawableWidget/master/images/tdw_square.png" >
 
 You can customize everything in text drawable widget. From fonts to size of the widget. Here are options that you can customized.
 
@@ -51,8 +50,6 @@ TextDrawableWidget(data, ColorGenerator.materialColors, (bool selected) {
 ### Built in Color generator
 By default this library ships with 2 sets of colors, material color and default color. But you can customize the color list and give any colors of your choice.
 To give a different color, use the following code
-`ColorGenerator.create(colorList)`
-
-It takes List<Color>
+`ColorGenerator.create(colorList)`. It takes List<Color>
 
 You can mix and match the default and customizable mode, check the example project. 
