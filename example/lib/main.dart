@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 TextDrawableWidget(data, ColorGenerator.materialColors, (bool selected) {
                   // on tap callback
-                }),
+                }, false),
                 SizedBox(width: 16.0),
                 Expanded(
                   child: Text(data, style: Theme.of(context).textTheme.headline),
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextDrawableWidget(data, ColorGenerator.materialColors, (bool selected) {
                   // on tap callback
                   print("on tap callback");
-                }, 60.0, 60.0, BoxShape.rectangle),
+                }, true, 60.0, 60.0, BoxShape.rectangle),
                 SizedBox(width: 16.0),
                 Expanded(
                   child: Text(data, style: Theme.of(context).textTheme.headline),

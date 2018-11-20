@@ -13,9 +13,11 @@ class TextDrawableWidget extends StatefulWidget {
   final TextStyle textStyle;
   ColorGenerator colorGenerator;
   final Function onTap;
+  final bool isTappable;
 
   TextDrawableWidget(this.text, this.colorGenerator, this.onTap,
-      [this.width = 60.0,
+      [this.isTappable = true,
+      this.width = 60.0,
       this.height = 60.0,
       this.shape = BoxShape.circle,
       this.textStyle = const TextStyle(color: Colors.white, fontSize: 28.0)]) {
@@ -44,16 +46,18 @@ class _TextDrawableWidgetState extends State<TextDrawableWidget> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        rotationStatus == 0 ? widget.onTap(true) : widget.onTap(false);
+        if (widget.isTappable) {
+          rotationStatus == 0 ? widget.onTap(true) : widget.onTap(false);
 
-        setState(() {
-          // change the ui
-          if (rotationStatus == 0) {
-            rotationStatus = 1;
-          } else {
-            rotationStatus = 0;
-          }
-        });
+          setState(() {
+            // change the ui
+            if (rotationStatus == 0) {
+              rotationStatus = 1;
+            } else {
+              rotationStatus = 0;
+            }
+          });
+        }
       },
       child: rotationStatus == 0 ? _getUnSelected() : _getSelected(),
     );
