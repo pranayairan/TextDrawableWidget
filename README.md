@@ -55,4 +55,4 @@ To give a different color, use the following code
 
 It takes List<Color>
 
-You can mix and match the default and customizable mode, check the example project. 
+You can mix and match the default and customizable mode, check the example project.
