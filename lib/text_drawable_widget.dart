@@ -13,10 +13,10 @@ class TextDrawableWidget extends StatefulWidget {
   final TextStyle textStyle;
   ColorGenerator colorGenerator;
   final Function onTap;
-  final bool isTappable;
+  final bool isTapable;
 
   TextDrawableWidget(this.text, this.colorGenerator, this.onTap,
-      [this.isTappable = true,
+      [this.isTapable = true,
       this.width = 60.0,
       this.height = 60.0,
       this.shape = BoxShape.circle,
@@ -46,7 +46,7 @@ class _TextDrawableWidgetState extends State<TextDrawableWidget> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        if (widget.isTappable) {
+        if (widget.isTapable) {
           rotationStatus == 0 ? widget.onTap(true) : widget.onTap(false);
 
           setState(() {
