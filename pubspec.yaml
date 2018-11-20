@@ -1,6 +1,6 @@
 name: text_drawable_widget
 description: This light-weight library provides images with letter/text like the Gmail app or like android contact apps
-version: 0.0.1
+version: 0.0.2
 author: Pranay Airan <pranay.airan@iiitb.net>
 homepage: https://github.com/pranayairan/TextDrawableWidget
 
